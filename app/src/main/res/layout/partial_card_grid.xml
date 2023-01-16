@@ -8,7 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:paddingTop="0dp"
+        android:paddingBottom="16dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp">
 
         <ImageView
             android:id="@+id/image"
@@ -20,15 +23,15 @@
 
         <TextView
             android:id="@+id/name"
-            android:layout_width="349dp"
+            android:layout_width="376dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
 
         <TextView
             android:id="@+id/age"
-            android:layout_width="351dp"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
@@ -38,7 +41,7 @@
 
         <TextView
             android:id="@+id/hobby"
-            android:layout_width="350dp"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
