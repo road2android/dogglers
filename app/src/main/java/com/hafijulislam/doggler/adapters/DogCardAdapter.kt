@@ -36,15 +36,15 @@ class DogCardAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
 
-        if (layout == Layout.VERTICAL || layout == Layout.HORIZONTAL) {
+        return if (layout == Layout.VERTICAL || layout == Layout.HORIZONTAL) {
             val adapterLayout = LayoutInflater.from(parent.context)
                 .inflate(R.layout.partial_card_list, parent, false)
-            return DogCardViewHolder(adapterLayout)
+            DogCardViewHolder(adapterLayout)
         } else {
             val adapterLayout = LayoutInflater.from(parent.context)
                 .inflate(R.layout.partial_card_grid, parent, false)
 
-            return DogCardViewHolder(adapterLayout)
+            DogCardViewHolder(adapterLayout)
         }
     }
 
